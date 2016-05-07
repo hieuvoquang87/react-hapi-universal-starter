@@ -1,0 +1,25 @@
+{
+  "name": "simple-react-hapi-starter",
+  "version": "0.1.0",
+  "description": "Simple React Redux Hapi Universal with HRM",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "hapi",
+    "universal",
+    "hot"
+  ],
+  "author": "Hieu Quang Vo",
+  "license": "MIT",
+  "devDependencies": {
+    "hapi-webpack-plugin": "^1.3.0",
+    "webpack": "^1.13.0"
+  },
+  "dependencies": {
+    "path": "^0.12.7"
+  }
+}
