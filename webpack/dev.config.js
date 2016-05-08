@@ -11,11 +11,17 @@ module.exports = {
     './src/browser/index.js'
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, '../dist'),
     filename: 'bundle.js',
-    publicPath: '/static/'
+    publicPath: '/dist/'
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: '"development"',
+      },
+      __DEVELOPMENT__: true
+    }),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin()
   ],
@@ -32,4 +38,4 @@ module.exports = {
       }
     ]
   }
-}
+};

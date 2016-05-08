@@ -58,7 +58,7 @@ server.register([HapiWebpackPlugin, Inert, Vision], (err) => {
     path: '/dist/{param*}',
     handler: {
       directory: {
-        path: 'public/dist/'
+        path: 'dist/'
       }
     }
   });
