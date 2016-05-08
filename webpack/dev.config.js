@@ -8,7 +8,7 @@ module.exports = {
   devtool: 'inline-source-map',
   entry: [
     'webpack-hot-middleware/client',
-    './client/index.js'
+    './src/browser/index.js'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
@@ -25,7 +25,7 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel',
         exclude: /node_modules/,
-        include: __dirname,
+        include: path.join(__dirname, '/../') ,
         query: {
           presets: [ 'react-hmre' ]
         }
